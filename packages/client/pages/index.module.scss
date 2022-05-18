@@ -1,0 +1,88 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagOrCategoryDetail {
+  padding: 16px 0;
+  margin-bottom: 1rem;
+  background: var(--bg-second);
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  i {
+    color: var(--disable-text-color);
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    &:first-of-type {
+      margin-top: 0.5rem;
+
+      span {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+      }
+    }
+
+    &:last-of-type {
+      span {
+        color: var(--primary-color);
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.crouselWrap {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background: var(--bg-second);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.leftWrap {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  > header {
+    padding: 1rem;
+    background: var(--bg-second);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border-bottom: 1px solid var(--border-color);
+
+    a {
+      padding: 0 12px;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      &:hover,
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  > main {
+    margin-bottom: 4rem;
+
+    > div > div {
+      border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.footer {
+  color: var(--second-text-color) !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border-top: 0 !important;
+}
