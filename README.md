@@ -48,7 +48,7 @@ CREATE DATABASE  `personal-blog-template` DEFAULT CHARACTER SET utf8mb4 COLLATE 
 **First, the Clone project.**  
 
 ```bash
-git clone --depth=1 https://github.com/Yoga2015/personal-blog-template.git your-project-name
+git clone --depth=1 https://github.com/Yoga/personal-blog-template.git your-project-name
 ```
 
 - **Then, install the project dependencies.**
