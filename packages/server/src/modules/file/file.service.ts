@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
@@ -15,9 +16,10 @@ export class FileService {
   constructor(
     @InjectRepository(File)
     private readonly fileRepository: Repository<File>,
-    private readonly settingService: SettingService
+    private readonly settingService: SettingService,
+    private readonly configService: ConfigService
   ) {
-    this.oss = new Oss(this.settingService);
+    this.oss = new Oss(this.settingService, this.configService);
   }
 
   /**

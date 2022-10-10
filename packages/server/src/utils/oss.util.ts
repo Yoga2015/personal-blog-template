@@ -1,4 +1,6 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import * as fs from 'fs';
 
 import { SettingService } from '../modules/setting/setting.service';
 import { AliyunOssClient } from './oss/aliyun-oss-client';
@@ -6,11 +8,13 @@ import { OssClient } from './oss/oss-client';
 
 export class Oss {
   settingService: SettingService;
+  configService: ConfigService;
   config: Record<string, unknown>;
   ossClient: OssClient;
 
-  constructor(settingService: SettingService) {
+  constructor(settingService: SettingService, configService: ConfigService) {
     this.settingService = settingService;
+    this.configService = configService;
   }
 
   private async getConfig() {
@@ -34,9 +38,22 @@ export class Oss {
   }
 
   async putFile(filepath: string, buffer: ReadableStream) {
-    const client = await this.getOssClient();
-    const url = await client.putFile(filepath, buffer);
-    return url;
+    //const client = await this.getOssClient();
+    //const url = await client.putFile(filepath, buffer);
+
+    const parent_dir = this.configService.get('FILE_STORAGE_DIR');
+    const FILE_BASE_URL = this.configService.get('FILE_BASE_URL');
+    const localFinalPath = parent_dir.concat(filepath);
+
+    fs.mkdir(localFinalPath.substring(0, localFinalPath.lastIndexOf('/')), { recursive: true }, (err) => {
+      if (err) throw err;
+    });
+
+    fs.writeFile(localFinalPath, buffer, (err) => {
+      console.log(err);
+    });
+
+    return FILE_BASE_URL.concat(filepath);
   }
 
   async deleteFile(url: string) {
