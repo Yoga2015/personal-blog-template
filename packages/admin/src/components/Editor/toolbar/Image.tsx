@@ -25,7 +25,8 @@ export const Image = ({ editor, monaco }) => {
           ]);
           hide();
         })
-        .catch(() => {
+        .catch((reason) => {
+          console.log(reason);
           message.error('上传失败');
           hide();
         });
