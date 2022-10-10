@@ -17,10 +17,15 @@ export const Image = ({ editor, monaco }) => {
           message.success('上传成功');
           const result = `![${res.filename}](${res.url})`;
           const p = editor.getPosition();
-          const monacoRangeObj = new monaco.Range(p.lineNumber, p.column, p.lineNumber, p.column);
+          // const monacoRangeObj = new monaco.Range(p.lineNumber, p.column, p.lineNumber, p.column);
           editor.executeEdits('', [
             {
-              range: monacoRangeObj,
+              range: {
+                startLineNumber: p.lineNumber,
+                startColumn: p.column,
+                endLineNumber: p.lineNumber,
+                endColumn: p.column,
+              },
               text: result,
             },
           ]);
