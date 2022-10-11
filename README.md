@@ -28,18 +28,6 @@ Wipi 是一个面向个人的开源的集成文章发表、页面创建、知识
 
 更多功能，欢迎访问系统进行体验。
 
-## 预览
-
-<ul>
-  <li><img width="240" alt="文章列表" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-13/3402/image.png"/></li>
-  <li><img width="240" alt="文章详情" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/815/image.png"/></li>
-  <li><img width="240" alt="动态页面" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/3124/image.png"/></li>
-  <li><img width="240" alt="知识小册" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/6485/image.png"/></li>
-  <li><img width="240" alt="后台管理" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/754/image.png"/></li>
-  <li><img width="240" alt="文章编辑" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/6587/image.png"/></li>
-  <li><img width="240" alt="小册编辑" src="https://wipi.oss-cn-shanghai.aliyuncs.com/2021-06-12/1864/image.png"/></li>
-</ul>
-
 ## 项目运行
 
 ### 数据库
