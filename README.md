@@ -13,7 +13,7 @@ Wipi 是一个面向个人的开源的集成文章发表、页面创建、知识
 
 - [Github 源码](https://github.com/coldstar1993/wipi)
 - [前台页面](http://www.studycairo.xyz/)
-- [管理系统](https://admin.blog.codingit.cn/)：支持访客注册
+- [管理系统](http://www.studycairo.xyz/)：支持访客注册
 
 ## 功能点
 
