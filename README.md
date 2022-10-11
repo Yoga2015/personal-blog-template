@@ -11,7 +11,7 @@ Wipi 是一个面向个人的开源的集成文章发表、页面创建、知识
 
 ## 链接
 
-- [Github 源码](https://github.com/fantasticit/wipi)
+- [Github 源码](https://github.com/coldstar1993/wipi)
 - [前台页面](https://blog.codingit.cn/)
 - [管理系统](https://admin.blog.codingit.cn/)：支持访客注册
 
@@ -64,7 +64,7 @@ CREATE DATABASE  `wipi` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
 首先，clone 项目。
 
 ```bash
-git clone --depth=1 https://github.com/fantasticit/wipi.git your-project-name
+git clone --depth=1 https://github.com/coldstar1993/wipi.git your-project-name
 ```
 
 然后，安装项目依赖。

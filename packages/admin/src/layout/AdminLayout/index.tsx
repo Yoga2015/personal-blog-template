@@ -75,7 +75,12 @@ export const AdminLayout: React.FC<{ headerAppender?: React.ReactNode }> = ({ he
             </Col>
             <Col span={12} style={{ textAlign: 'right' }}>
               <div className={style.info}>
-                <a className={style.github} href="https://github.com/fantasticit/wipi" target="_blank" rel="noreferrer">
+                <a
+                  className={style.github}
+                  href="https://github.com/coldstar1993/wipi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <GithubOutlined />
                 </a>
                 <UserInfo />
@@ -106,7 +111,7 @@ export const AdminLayout: React.FC<{ headerAppender?: React.ReactNode }> = ({ he
                 <li>
                   <a
                     className={style.github}
-                    href="https://github.com/fantasticit/wipi"
+                    href="https://github.com/coldstar1993/wipi"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -117,7 +122,7 @@ export const AdminLayout: React.FC<{ headerAppender?: React.ReactNode }> = ({ he
               <div className={style.copyright}>
                 <p>
                   Copyright <CopyrightOutlined /> {new Date().getFullYear()} Designed by
-                  <a href="https://github.com/fantasticit/wipi" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/coldstar1993/wipi" target="_blank" rel="noreferrer">
                     {' '}
                     Fantasticit.
                   </a>
