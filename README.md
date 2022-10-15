@@ -92,7 +92,7 @@ pnpm run dev
 
 ```bash
 # 客户端运行端口
-CLIENT_PORT=3001
+CLIENT_PORT=3001    #这个可以用 nginx 修改成80端口
 # 客户端站点地址（假设部署到 https://xx.com, 就将 CLIENT_SITE_URL 设置为 https://xx.com）
 CLIENT_SITE_URL=http://localhost:3001
 # 客户端资源地址（假设部署到 https://xx.com，就将 CLIENT_ASSET_PREFIX 设置为 https://xx.com，如果将资源上传到 cdn ，那就改为 cdn 地址）
@@ -112,12 +112,12 @@ SERVER_API_PREFIX=/api
 # 默认管理员账户名
 ADMIN_USER=admin
 # 默认管理员账密码
-ADMIN_PASSWD=admin
+ADMIN_PASSWD=admin   #这个是原始密码，登录进入网站后必须马上修改
 # 以下为数据库配置，请先创建好表
-DB_HOST=127.0.0.1
+DB_HOST=127.0.0.1   #这个IP地址 要改成 自己服务器的IP地址
 DB_PORT=3306
 DB_USER=root
-DB_PASSWD=root
+DB_PASSWD=root     #这个密码要改
 DB_DATABASE=wipi
 
 # Github 第三方登录配置
